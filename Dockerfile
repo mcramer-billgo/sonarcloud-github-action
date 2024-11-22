@@ -21,7 +21,7 @@ WORKDIR /opt
 
 # GitHub actions should be run under ROOT
 # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners#docker-container-filesystem
-# USER 0
+USER runner
 
 # Prepare entrypoint
 COPY entrypoint.sh /entrypoint.sh
